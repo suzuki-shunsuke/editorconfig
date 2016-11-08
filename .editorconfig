@@ -2,27 +2,19 @@ root = true
 
 [*]
 charset = utf8
+indent_size = 2
 end_of_line = lf
 indent_style = space
 trim_trailing_whitespace = true
+quote_type = double
 
-[*.css]
-indent_size = 2
-
-[*.html]
-indent_size = 2
-
-[*.js]
-indent_size = 4
-
-[*.json]
-indent_size = 2
+[*.js,*jsx]
+quote_type = single
+curly_bracket_next_line = false
+indent_brace_style = K&R
 
 [*.py]
 indent_size = 4
-
-[*.{yml,yaml}]
-indent_size = 2
 
 [Makefile]
 indent_style = tab
